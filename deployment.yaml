@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: currencycodeapp
+  labels:
+    app: currencycodeapp 
+spec:
+  replicas: 3 
+  selector:
+    matchLabels:
+      app: currencycodeapp 
+  template:
+    metadata:
+      labels:
+        app: currencycodeapp
+    spec:
+      containers:
+      - name: currencycodeapp 
+        image: satbindarchawla/country-currencycode:1.0.0.RELEASE 
+        ports:
+        - containerPort: 5000

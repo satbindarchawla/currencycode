@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: currencycodeapp
+spec:
+  ingressClassName: kong
+  rules:
+  - http:
+      paths:
+      - path: /currencycode
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: currencycodeapp-svc
+            port:
+              number: 80
