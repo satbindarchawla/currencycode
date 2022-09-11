@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: currencycodeapp 
-        image: satbindarchawla/country-currencycode:1.0.0.RELEASE 
+        image: satbindarchawla/country-currencycode:1.0.2.RELEASE
         ports:
         - containerPort: 5000

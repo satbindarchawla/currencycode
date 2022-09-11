@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 # ...
 data = {
-    "India" : "INR",
+    "India" : {"Others names:": ['IN', 'Bhārat', 'Republic of India', 'Bharat Ganrajya'],"Capital is:": "Delhi", "Currency is:":"INR","Language is:" :  ['hindi', 'en']},
     "Germany" : "EUR",
     "United States" : "USD",
     "AUSTRALIA" : "AUD",
